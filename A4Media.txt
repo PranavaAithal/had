@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int curpos= media.getCurrentPosition();
-                if((curpos - backwardtime) <= (starttime))
+                if((curpos - backwardtime) >= (starttime))
                 {
                     media.seekTo(curpos-backwardtime);
                 }
